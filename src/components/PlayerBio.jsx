@@ -31,13 +31,7 @@ function PlayerProfile() {
     >
       <Heading fontSize="3xl" fontWeight="light" color="#ebebeb" fontFamily="'Roboto', system-ui">
         {player.name}
-      </Heading>
-      <Box bgColor="#ebebeb" padding="50px" borderRadius="12px" borderColor="#000000" borderWidth="5px" width="45%">
-        <Text fontSize="xl" color="#000000" fontWeight="200" fontFamily="'Roboto', system-ui" lineHeight="2.5">
-          {player.paragraph}
-        </Text>
-      </Box>
-      
+      </Heading>  
       <Flex flexDirection="row" flexWrap="wrap" justifyContent="center">
       {/* <Box
         w={{ base: '90%', md: '400px' }}
@@ -64,8 +58,9 @@ function PlayerProfile() {
       </MotionBox>
       <MotionBox
         w={{ base: '90%', md: '500px' }}
-        h="840px"
+        h="800px"
         minW="320px"
+        maxW="400px"
         m="5"
         bgColor="#ebebeb"
         bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #ebebeb 50%, #ebebeb 75%, transparent 75%, transparent)"
@@ -82,19 +77,24 @@ function PlayerProfile() {
         <Grid gap={4}>
           {player.bioCategories.map((category, index) => (
             <Box key={index} p={3} bgColor="transparent" borderRadius="8px">
-              <Text color="#000000" fontFamily="'Roboto', system-ui" fontSize="xl" fontWeight="bold">
+              <Text color="#000000" fontFamily="'Roboto', system-ui" fontSize="lg" fontWeight="bold">
                 {category.title}
               </Text>
-              <Text color="#000000" fontFamily="'Roboto+Condensed', system-ui" fontSize="lg" mt={1}>
+              <Text color="#000000" fontFamily="'Roboto+Condensed', system-ui" fontSize="med" mt={1}>
                 {category.description}
               </Text>
             </Box>
           ))}
         </Grid>
       </MotionBox>
-      {/* </Box> */}
       </Flex>
+      <Box bgColor="#ebebeb" padding="50px" borderRadius="12px" borderColor="#000000" borderWidth="5px" minW="400px" maxW="845px">
+        <Text fontSize="lg" color="#000000" fontWeight="200" fontFamily="'Roboto', system-ui" lineHeight="2.5">
+          {player.paragraph}
+        </Text>
+      </Box>
     </VStack>
+    
   );
 }
 
