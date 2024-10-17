@@ -84,7 +84,7 @@ function PlayerProfile() {
                 {category.description}
               </Text>
             </Box>
-          ))}
+          ))}500
         </Grid>
       </MotionBox>
       </Flex>
