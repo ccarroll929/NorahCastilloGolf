@@ -74,7 +74,7 @@ const Navbar = () => {
             boxShadow="lg"
             mb="10px"
         >
-            <Flex alignItems="center" justifyContent="space-between" wrap="wrap" height="60px">
+            <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
                 <Heading
                     as={RouterLink}
                     to="/"
