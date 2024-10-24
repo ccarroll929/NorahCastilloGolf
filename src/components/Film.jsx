@@ -82,8 +82,8 @@ function HoopsFilm() {
       mt={{ base: 12, md: 16 }}
       mb={{ base: 12, md: 16 }}
     >
-      <Text fontSize="3xl" fontWeight="medium" color="#ebebeb" fontFamily="'Roboto', system-ui">
-        Norah's Golf Videos
+      <Text fontSize="3xl" color="#ebebeb" fontFamily="'Roboto', system-ui">
+        Golf Videos of Norah
       </Text>
       <SimpleGrid columns={columns} spacing={{ base: 3, sm: 5 }} justifyItems="center">
         {videos.map((video, index) => (

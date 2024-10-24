@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-content">
           <Flex justify="space-between" mt="1" direction={['column', 'row']} gap="1rem"> 
           <div className="footer-logo">©2024 Norah Castillo</div>
-          <Flex alignItems="center">
+          {/* <Flex alignItems="center">
           <IconButton 
               as={Link}
               to="https://facebook.com" 
@@ -40,7 +40,7 @@ function Footer() {
               fontSize="24px"
               _hover={{ color: 'yellow' }} 
             />
-          </Flex>
+          </Flex> */}
           <Flex alignItems='center' justifyContent={['center', 'flex-end']}>
           <div><span className="tilt-prism-footer">Athlete X Elite</span></div>
           </Flex>

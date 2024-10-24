@@ -21,6 +21,7 @@ function Contact() {
       
       <MotionBox
         w={{ base: '90%', md: '600px' }}
+        minW="370px"
         bgColor="#00B2A9"
         bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #ebebeb 50%, #ebebeb 75%, transparent 75%, transparent)"
         bgSize="1px 1px"
@@ -85,8 +86,6 @@ function Contact() {
             mt={4}
             bgColor="#000000"
             color="#F8F8F8"
-            minW="50%"
-            maxW="45%"
             alignSelf="center"
             fontFamily="'Roboto', system-ui"
             fontWeight="medium"
@@ -94,7 +93,7 @@ function Contact() {
             borderRadius="8px"
             borderColor="#000000"
             borderWidth="3px"
-            _hover={{ borderColor: '#F8F8F8' }}
+            _hover={{ backgroundColor: '#00330b' }}
           >
             Submit
           </Button>

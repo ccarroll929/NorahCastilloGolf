@@ -11,7 +11,7 @@ function Card({ frontImg, bio, flipSound }) {
   };
 
   return (
-    <Box w="300px" h="400px" perspective="1000px" mb="10px">
+    <Box w="300px" h="400px" perspective="1000px" mb="6px">
       <Box
         w="100%"
         h="100%"
@@ -65,7 +65,7 @@ function Card({ frontImg, bio, flipSound }) {
           {/* <Text fontSize="2xl" fontWeight="bold" color="#ebebeb" fontFamily="'Roboto', system-ui">
             {name}
           </Text> */}
-          <Text mt={4} color="#00330b" fontFamily="'Roboto', system-ui" fontSize="2xl" fontWeight="medium" textAlign="center">
+          <Text mt={4} color="#000000" fontFamily="'Roboto', system-ui" fontSize="2xl" fontWeight="medium" textAlign="center">
           {bio}
           </Text>
         </Box>
@@ -138,8 +138,8 @@ function PlayerCards() {
       <Text fontSize="3xl" fontWeight="medium" color="#ebebeb" fontFamily="'Roboto', system-ui">
         Player Cards    
       </Text>
-      <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Roboto', system-ui">
-        Click on a card to see player card info
+      <Text fontSize="xl" fontWeight="medium" color="#ebebeb" fontFamily="'Roboto', system-ui" textAlign="center">
+        Click on a card to learn more about Norah
         </Text>
 
       <SimpleGrid

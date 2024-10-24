@@ -71,6 +71,8 @@ function StatTracker() {
       <MotionBox
         w={{ base: '90%', md: '600px' }}
         bgColor="#ebebeb"
+        minW="380px"
+        maxW="700px"
         borderRadius="12px"
         borderColor="#000000"
         borderWidth="5px"
@@ -111,6 +113,8 @@ function StatTracker() {
         bgColor="#00B2A9"
         bgImage="linear-gradient(-45deg, #ebebeb 25%, transparent 25%, transparent 50%, #ebebeb 50%, #ebebeb 75%, transparent 75%, transparent)"
         bgSize="1px 1px"
+        minW="380px"
+        maxW="700px"
         borderRadius="12px"
         borderColor="#000000"
         borderWidth="5px"
@@ -246,8 +250,6 @@ function StatTracker() {
             onClick={handleAddGame}
             mt={4}
             bgColor="#000000"
-            maxW="50%"
-            minW="45%"
             height="50px"
             color="#ebebeb"
             fontFamily="'Roboto', system-ui"
